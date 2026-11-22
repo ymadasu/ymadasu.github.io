@@ -3,1085 +3,726 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yagna Madasu | Strategic Enterprise Technology Leader</title>
-  <!-- Tailwind CSS -->
+  <title>Yagna Madasu | Enterprise Technology Leader — Enterprise Applications, Analytics, Data &amp; AI</title>
+  <meta name="description" content="Leadership Portfolio of Yagna Madasu: Multi-Year Roadmaps, Capital Allocation, Enterprise Applications (Oracle Fusion, Oracle EPM, SAP ECC, Oracle EBS), Analytics, Data & AI Foundations, and Regulated Governance." />
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Google Fonts: Inter & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet" />
-  <!-- Lucide Icons -->
-  <script src="https://unpkg.com/lucide@latest"></script>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
-            display: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
           },
           colors: {
-            navy: {
-              950: '#080D1A',
-              900: '#0F172A',
-              800: '#1E293B',
-              700: '#334155',
-            },
-            exec: {
-              teal: '#0284C7',
-              tealLight: '#E0F2FE',
-              amber: '#D97706',
-              amberLight: '#FEF3C7',
+            brand: {
+              navy: '#1e3a5f',
+              navyDark: '#162c49',
+              warmBg: '#fafaf9',
+              warmSurface: '#f5f5f4',
+              ink: '#18181b',
+              inkSub: '#3f3f46',
+              muted: '#52525b',
+              line: '#e4e4e7',
+              tint: '#eff6ff',
+              tintBorder: '#bfdbfe',
             }
           }
         }
       }
-    };
+    }
   </script>
-
   <style>
-    /* Subtle executive grid pattern for hero */
-    .hero-grid {
-      background-image: radial-gradient(rgba(148, 163, 184, 0.14) 1px, transparent 1px);
-      background-size: 26px 26px;
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #fafaf9;
+      color: #18181b;
     }
 
-    /* Smooth card elevation */
-    .exec-card {
-      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
-    }
-    .exec-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 14px 30px -10px rgba(15, 23, 42, 0.12);
-      border-color: #CBD5E1;
+    .hero-editorial {
+      background: linear-gradient(180deg, #ffffff 0%, #fafaf9 100%);
     }
 
-    /* Print / Save as PDF clean styling */
     @media print {
       .no-print {
         display: none !important;
       }
+      .tab-panel {
+        display: block !important;
+        margin-bottom: 1rem;
+      }
+      .case-card.hidden {
+        display: flex !important;
+      }
       body {
-        background: #FFFFFF !important;
-        color: #0F172A !important;
-      }
-      section {
-        padding-top: 1.5rem !important;
-        padding-bottom: 1.5rem !important;
-        break-inside: avoid;
-      }
-      .exec-card {
-        box-shadow: none !important;
-        border: 1px solid #CBD5E1 !important;
-        break-inside: avoid;
+        background-color: #ffffff !important;
       }
     }
   </style>
 </head>
-<body class="bg-slate-50 text-slate-800 antialiased selection:bg-sky-100 selection:text-sky-900">
+<body class="antialiased selection:bg-brand-tint selection:text-brand-navy">
 
-  <!-- Toast Notification (Replaces alert() per system standards) -->
-  <div id="toast" class="no-print fixed bottom-6 right-6 z-50 hidden transform transition-all duration-300 translate-y-4 opacity-0">
-    <div class="flex items-center gap-3 rounded-xl bg-slate-900 px-4 py-3 text-sm font-medium text-white shadow-xl border border-slate-700">
-      <i data-lucide="check-circle-2" class="h-4 w-4 text-emerald-400 shrink-0"></i>
-      <span id="toast-message">Email copied to clipboard</span>
-    </div>
-  </div>
-
-  <!-- Sticky Executive Top Navigation -->
-  <header class="no-print sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 backdrop-blur-md">
-    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
-      <a href="#top" class="flex items-center gap-3 group">
-        <div class="flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900 font-display text-sm font-bold tracking-wider text-white group-hover:bg-sky-700 transition-colors">
+  <!-- Sticky Top Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur border-b border-brand-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-3.5 flex items-center justify-between gap-4">
+      <a href="#" class="flex items-center gap-3 group focus:outline-none">
+        <div class="w-10 h-10 rounded-xl bg-brand-navy text-white font-bold text-sm tracking-wider flex items-center justify-center shadow-sm group-hover:bg-brand-navyDark transition">
           YM
         </div>
         <div>
-          <span class="block font-display text-base font-bold tracking-tight text-slate-900">Yagna Madasu</span>
-          <span class="hidden sm:block text-xs font-medium text-slate-500">Strategic Enterprise Technology Leader</span>
+          <div class="font-bold text-brand-ink text-base leading-tight">Yagna Madasu</div>
+          <div class="text-xs font-medium text-brand-muted leading-tight">Enterprise Technology Leader</div>
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
-        <a href="#impact" class="hover:text-slate-900 transition-colors">Key Impact</a>
-        <a href="#capabilities" class="hover:text-slate-900 transition-colors">Capabilities</a>
-        <a href="#experience" class="hover:text-slate-900 transition-colors">Career Progression</a>
-        <a href="#education" class="hover:text-slate-900 transition-colors">Education</a>
-        <a href="#contact" class="hover:text-slate-900 transition-colors">Contact</a>
+      <nav aria-label="Primary Navigation" class="hidden md:flex items-center gap-6 text-sm font-medium text-brand-muted">
+        <a href="#leadership" class="hover:text-brand-navy transition">How I Lead</a>
+        <a href="#results" class="hover:text-brand-navy transition">Key Results</a>
+        <a href="#capabilities" class="hover:text-brand-navy transition">Capabilities</a>
+        <a href="#experience" class="hover:text-brand-navy transition">Experience</a>
+        <a href="#credentials" class="hover:text-brand-navy transition">Credentials</a>
       </nav>
 
-      <!-- Action Buttons -->
-      <div class="flex items-center gap-2.5">
-        <button
-          onclick="window.print()"
-          title="Print or Save as Executive One-Pager PDF"
-          class="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 bg-white px-3 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-50 hover:text-slate-900 transition-colors"
-        >
-          <i data-lucide="printer" class="h-4 w-4 text-slate-500"></i>
-          <span class="hidden sm:inline">Save PDF</span>
+      <div class="flex items-center gap-2.5 no-print">
+        <button type="button" onclick="window.print()" class="px-3.5 py-2 rounded-xl border border-brand-line bg-white text-brand-ink text-xs sm:text-sm font-semibold hover:border-brand-navy hover:text-brand-navy transition cursor-pointer">
+          Print / Save PDF
         </button>
-        <a
-          href="#contact"
-          class="inline-flex items-center gap-1.5 rounded-lg bg-slate-900 px-3.5 py-2 text-xs sm:text-sm font-semibold text-white hover:bg-sky-700 transition-colors shadow-sm"
-        >
-          <span>Connect</span>
-          <i data-lucide="arrow-up-right" class="h-4 w-4"></i>
+        <a href="#contact" class="px-4 py-2 rounded-xl bg-brand-navy text-white text-xs sm:text-sm font-semibold hover:bg-brand-navyDark transition shadow-sm">
+          Contact
         </a>
-        <!-- Mobile Menu Toggle -->
-        <button
-          id="mobile-menu-btn"
-          aria-label="Toggle Menu"
-          class="md:hidden inline-flex items-center justify-center rounded-lg border border-slate-200 p-2 text-slate-600 hover:bg-slate-100"
-        >
-          <i data-lucide="menu" class="h-5 w-5"></i>
-        </button>
-      </div>
-    </div>
-
-    <!-- Mobile Dropdown Navigation -->
-    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-4 py-3 md:hidden">
-      <div class="flex flex-col space-y-2.5 text-sm font-medium text-slate-700">
-        <a href="#impact" class="mobile-link py-1.5 hover:text-sky-700">Key Impact</a>
-        <a href="#capabilities" class="mobile-link py-1.5 hover:text-sky-700">Capabilities Matrix</a>
-        <a href="#experience" class="mobile-link py-1.5 hover:text-sky-700">Career Progression</a>
-        <a href="#education" class="mobile-link py-1.5 hover:text-sky-700">Education &amp; Certifications</a>
-        <a href="#contact" class="mobile-link py-1.5 hover:text-sky-700">Executive Contact</a>
       </div>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section id="top" class="relative overflow-hidden bg-slate-900 hero-grid text-white">
-    <div class="absolute inset-0 bg-gradient-to-br from-slate-950/90 via-slate-900/95 to-slate-800/90 pointer-events-none"></div>
-    <div class="relative mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-22 lg:px-8 lg:py-24">
-      <div class="grid grid-cols-1 gap-10 lg:grid-cols-12 lg:items-center">
-        <!-- Main Hero Column -->
-        <div class="lg:col-span-8">
-          <div class="inline-flex items-center gap-2 rounded-full border border-sky-400/30 bg-sky-500/10 px-3.5 py-1.5 text-xs font-semibold tracking-wide text-sky-300 uppercase mb-6">
-            <span class="h-2 w-2 rounded-full bg-amber-400"></span>
-            <span>Strategic Enterprise Technology Leader | Enterprise Applications, Data &amp; AI</span>
+  <!-- Clean Light Editorial Hero Section -->
+  <section class="hero-editorial border-b border-brand-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 pt-14 pb-16 sm:pt-20 sm:pb-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
+        <!-- Left Column: Positioning & Executive Summary -->
+        <div class="lg:col-span-7">
+          <div class="inline-flex items-center px-3.5 py-1.5 rounded-full bg-brand-tint border border-brand-tintBorder text-brand-navy text-xs font-semibold tracking-wide mb-5">
+            Enterprise Applications • Analytics • Data &amp; AI
           </div>
 
-          <h1 class="font-display text-3xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-[3.25rem] lg:leading-[1.12]">
+          <h1 class="text-3xl sm:text-5xl font-extrabold text-brand-ink tracking-tight leading-tight mb-3">
             Yagna Madasu
           </h1>
 
-          <p class="mt-3 font-display text-lg font-semibold text-sky-400 sm:text-2xl">
-            Enterprise Applications, Data &amp; AI Strategy | Global IT Operations &amp; M&amp;A Integration
+          <p class="text-lg sm:text-xl font-semibold text-brand-navy mb-5">
+            Enterprise Technology Leader | Global ERP, Finance, Supply Chain, Analytics &amp; AI
           </p>
 
-          <p class="mt-3 text-xs sm:text-sm font-medium tracking-wide text-slate-300 border-l-2 border-amber-500 pl-3.5">
-            CEO, CFO &amp; CDO Strategic Advisor &nbsp;|&nbsp; $25M IT Budget &amp; P&amp;L Stewardship &nbsp;|&nbsp; Data &amp; AI Foundations &amp; AI CoE &nbsp;|&nbsp; CSV, TPRM &amp; M&amp;A Integration
+          <p class="text-base sm:text-[17px] text-brand-inkSub leading-relaxed mb-4 max-w-2xl">
+            Technology leader with 20+ years in regulated life sciences manufacturing. I partner with the executive leadership team to shape multi-year technology roadmaps, allocate capital across a $25M annual IT budget, guide post-merger M&amp;A integrations, and manage enterprise risk across Finance, Supply Chain, Manufacturing, Quality, HR, and Commercial operations.
           </p>
 
-          <p class="mt-6 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-lg">
-            Strategic enterprise technology executive with 20+ years of global leadership experience partnering directly with the CEO, CFO, and CDO on multi-year digital roadmaps, $25M IT budget stewardship, core enterprise ecosystems (ERP, HR, CRM), Data &amp; AI foundations, and post-merger M&amp;A integration across regulated life sciences and global manufacturing. Overseeing a 65+ person global organization and 200+ applications across 40+ vendors, I align technology strategy with enterprise growth, regulatory rigor, and operating discipline for VP and senior executive technology mandates.
+          <p class="text-base sm:text-[17px] text-brand-inkSub leading-relaxed mb-7 max-w-2xl">
+            At the senior leadership level, my focus is on building strong global teams, setting clear direction, and creating alignment across business and IT leaders so teams deliver with genuine commitment. While my deepest hands-on foundation is in Oracle (Oracle Fusion, Oracle EPM Suite, and Oracle EBS), my leadership is ERP-agnostic across SAP, Oracle, and custom enterprise ecosystems.
           </p>
 
-          <!-- Executive Credentials Pills -->
-          <div class="mt-6 flex flex-wrap gap-2">
-            <span class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200">
-              <i data-lucide="briefcase" class="h-3.5 w-3.5 text-amber-400"></i>
-              <span>$25M IT Budget &amp; P&amp;L Ownership</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200">
-              <i data-lucide="globe-2" class="h-3.5 w-3.5 text-sky-400"></i>
-              <span>65+ Global Organization (US, UK, India, China, Brazil)</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200">
-              <i data-lucide="layers" class="h-3.5 w-3.5 text-sky-400"></i>
-              <span>200+ Applications | 40+ Vendors</span>
-            </span>
-            <span class="inline-flex items-center gap-1.5 rounded-lg border border-slate-700 bg-slate-800/80 px-3 py-1.5 text-xs font-semibold text-slate-200">
-              <i data-lucide="compass" class="h-3.5 w-3.5 text-amber-400"></i>
-              <span>CEO / CFO / CDO Strategic Advisor</span>
-            </span>
+          <!-- Primary Hero CTAs -->
+          <div class="flex flex-wrap items-center gap-3 mb-7 no-print">
+            <a href="#results" class="px-5 py-3 rounded-xl bg-brand-navy text-white text-sm font-semibold hover:bg-brand-navyDark transition shadow-sm">
+              Review Key Results
+            </a>
+            <a href="https://www.linkedin.com/in/yagna-madasu-4b5a9b18/" target="_blank" rel="noopener" class="px-5 py-3 rounded-xl border border-brand-line bg-white text-brand-ink text-sm font-semibold hover:border-brand-navy hover:text-brand-navy transition shadow-xs">
+              LinkedIn Profile
+            </a>
           </div>
 
-          <!-- Primary CTA Row -->
-          <div class="no-print mt-8 flex flex-wrap items-center gap-3.5">
-            <a
-              href="#impact"
-              class="inline-flex items-center gap-2 rounded-xl bg-sky-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-sky-950/50 hover:bg-sky-500 transition-all"
-            >
-              <span>Explore Key Impact</span>
-              <i data-lucide="arrow-down-right" class="h-4 w-4"></i>
-            </a>
-            <a
-              href="#experience"
-              class="inline-flex items-center gap-2 rounded-xl border border-slate-600 bg-slate-800/80 px-5 py-3 text-sm font-semibold text-white hover:bg-slate-700 hover:border-slate-500 transition-all"
-            >
-              <span>Career Progression</span>
-            </a>
-            <a
-              href="#contact"
-              class="inline-flex items-center gap-2 rounded-xl border border-amber-500/40 bg-amber-500/10 px-5 py-3 text-sm font-semibold text-amber-300 hover:bg-amber-500/20 transition-all"
-            >
-              <span>Get in Touch</span>
-            </a>
+          <!-- Contact Strip -->
+          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-brand-muted">
+            <span>Colmar, PA (Greater Philadelphia)</span>
+            <span aria-hidden="true">•</span>
+            <span>267-660-8456</span>
+            <span aria-hidden="true">•</span>
+            <a href="mailto:yagna.vasu@gmail.com" class="font-medium text-brand-navy hover:underline">yagna.vasu@gmail.com</a>
           </div>
         </div>
 
-        <!-- Executive Quick-Contact Card -->
-        <div class="lg:col-span-4">
-          <div class="rounded-2xl border border-slate-700/80 bg-slate-800/70 p-6 backdrop-blur-sm shadow-2xl">
-            <div class="flex items-center justify-between border-b border-slate-700 pb-4">
-              <div>
-                <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">Executive Leadership</p>
-                <p class="mt-0.5 font-display text-base font-bold text-white">Direct Coordinates</p>
-              </div>
-              <span class="inline-flex items-center rounded-md bg-amber-500/15 px-2.5 py-1 text-xs font-semibold text-amber-300 border border-amber-500/30">
-                VP / Executive Ready
-              </span>
+        <!-- Right Column: Crisp White Leadership Scope Card -->
+        <div class="lg:col-span-5">
+          <div class="rounded-2xl bg-white border border-brand-line border-t-4 border-t-brand-navy p-6 sm:p-7 shadow-sm">
+            <div class="text-xs font-bold uppercase tracking-wider text-brand-muted mb-5">
+              Leadership Scope at a Glance
             </div>
 
-            <ul class="mt-5 space-y-4 text-sm">
-              <li class="flex items-start gap-3">
-                <i data-lucide="map-pin" class="h-4 w-4 text-sky-400 mt-0.5 shrink-0"></i>
-                <div>
-                  <span class="block text-xs text-slate-400">Location</span>
-                  <span class="font-medium text-slate-100">Colmar, PA (Greater Philadelphia)</span>
+            <div class="space-y-5">
+              <div class="pb-5 border-b border-brand-line">
+                <div class="text-xs font-bold uppercase tracking-wide text-brand-muted mb-1">
+                  Current Role
                 </div>
-              </li>
-              <li class="flex items-start gap-3">
-                <i data-lucide="phone" class="h-4 w-4 text-sky-400 mt-0.5 shrink-0"></i>
-                <div>
-                  <span class="block text-xs text-slate-400">Direct Phone</span>
-                  <a href="tel:2676608456" class="font-medium text-slate-100 hover:text-sky-300 transition-colors">267-660-8456</a>
+                <div class="text-base font-bold text-brand-ink">
+                  Director, Enterprise Applications &amp; Analytics at Colorcon
                 </div>
-              </li>
-              <li class="flex items-start justify-between gap-2">
-                <div class="flex items-start gap-3 min-w-0">
-                  <i data-lucide="mail" class="h-4 w-4 text-sky-400 mt-0.5 shrink-0"></i>
-                  <div class="min-w-0">
-                    <span class="block text-xs text-slate-400">Email</span>
-                    <a href="mailto:yagna.vasu@gmail.com" class="block truncate font-medium text-slate-100 hover:text-sky-300 transition-colors">yagna.vasu@gmail.com</a>
-                  </div>
+              </div>
+
+              <div class="pb-5 border-b border-brand-line">
+                <div class="text-xs font-bold uppercase tracking-wide text-brand-muted mb-1">
+                  Budget &amp; Global Team
                 </div>
-                <button
-                  onclick="copyEmail()"
-                  class="no-print shrink-0 rounded-lg border border-slate-600 bg-slate-700/70 px-2.5 py-1.5 text-xs font-medium text-slate-200 hover:bg-slate-600 hover:text-white transition-colors"
-                  title="Copy email address"
-                >
-                  Copy
-                </button>
-              </li>
-              <li class="flex items-start gap-3">
-                <i data-lucide="linkedin" class="h-4 w-4 text-sky-400 mt-0.5 shrink-0"></i>
-                <div>
-                  <span class="block text-xs text-slate-400">Executive Network</span>
-                  <a
-                    href="https://www.linkedin.com/in/yagna-madasu-4b5a9b18/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="inline-flex items-center gap-1 font-medium text-sky-400 hover:text-sky-300 transition-colors"
-                  >
-                    <span>linkedin.com/in/yagna-madasu</span>
-                    <i data-lucide="external-link" class="h-3.5 w-3.5"></i>
-                  </a>
+                <div class="text-base font-bold text-brand-ink">
+                  $25M Annual IT Budget • 65+ Global Staff • Americas, EMEA, APAC &amp; LATAM
                 </div>
-              </li>
-            </ul>
+              </div>
+
+              <div class="pb-5 border-b border-brand-line">
+                <div class="text-xs font-bold uppercase tracking-wide text-brand-muted mb-1">
+                  Core Platforms
+                </div>
+                <div class="text-base font-bold text-brand-ink">
+                  200+ Apps • 40+ Vendors • Oracle Fusion, Oracle EPM, SAP ECC, Oracle EBS
+                </div>
+              </div>
+
+              <div>
+                <div class="text-xs font-bold uppercase tracking-wide text-brand-muted mb-1">
+                  Core Focus
+                </div>
+                <div class="text-base font-bold text-brand-ink">
+                  Finance &amp; ERP Ecosystems, Multi-Year Roadmaps, M&amp;A Integration, Data &amp; AI, CSV Governance
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Executive Metrics Bar (4 Key Numbers) -->
-  <section class="relative z-10 -mt-8 mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-      <!-- Metric 1 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md">
-        <div class="flex items-center justify-between">
-          <span class="font-display text-3xl font-extrabold text-slate-900">$25M</span>
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
-            <i data-lucide="wallet" class="h-5 w-5"></i>
-          </div>
-        </div>
-        <p class="mt-2 text-sm font-semibold text-slate-900">Annual IT Budget &amp; P&amp;L</p>
-        <p class="mt-1 text-xs text-slate-500">Disciplined capital allocation &amp; multi-year vendor optimization</p>
-      </div>
-
-      <!-- Metric 2 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md">
-        <div class="flex items-center justify-between">
-          <span class="font-display text-3xl font-extrabold text-slate-900">65+</span>
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-700">
-            <i data-lucide="globe-2" class="h-5 w-5"></i>
-          </div>
-        </div>
-        <p class="mt-2 text-sm font-semibold text-slate-900">Global Team Leadership</p>
-        <p class="mt-1 text-xs text-slate-500">24/7 delivery across US, UK, India, China &amp; Brazil</p>
-      </div>
-
-      <!-- Metric 3 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md">
-        <div class="flex items-center justify-between">
-          <span class="font-display text-3xl font-extrabold text-slate-900">200+</span>
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-50 text-sky-700">
-            <i data-lucide="layers" class="h-5 w-5"></i>
-          </div>
-        </div>
-        <p class="mt-2 text-sm font-semibold text-slate-900">Business Applications</p>
-        <p class="mt-1 text-xs text-slate-500">Enterprise ERP, HR, CRM &amp; custom platforms across 40+ vendors</p>
-      </div>
-
-      <!-- Metric 4 -->
-      <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-md">
-        <div class="flex items-center justify-between">
-          <span class="font-display text-3xl font-extrabold text-slate-900">33% / 35%</span>
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-700">
-            <i data-lucide="trending-down" class="h-5 w-5"></i>
-          </div>
-        </div>
-        <p class="mt-2 text-sm font-semibold text-slate-900">Cost &amp; Effort Reduction</p>
-        <p class="mt-1 text-xs text-slate-500">33% SAP savings &amp; 35% dev effort reduction with flat headcount/spend</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Signature Initiatives & Case Studies -->
-  <section id="impact" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-    <div class="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">Executive Outcomes</span>
-        <h2 class="mt-1 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Signature Initiatives &amp; Case Studies
-        </h2>
-        <p class="mt-2 max-w-2xl text-sm sm:text-base text-slate-600">
-          Proven enterprise transformations balancing cost discipline, global delivery scale, applied AI acceleration, and strict regulatory compliance.
+  <!-- Key Metrics Strip -->
+  <section aria-label="Key Metrics" class="max-w-6xl mx-auto px-5 sm:px-8 pt-10 pb-2">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5">
+      <div class="rounded-2xl bg-white border border-brand-line p-5 sm:p-6 shadow-xs">
+        <div class="text-3xl font-extrabold text-brand-navy tracking-tight mb-1.5">33%</div>
+        <div class="text-sm font-bold text-brand-ink mb-1">SAP Maintenance Savings</div>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+          Cut annual SAP run-rate through multi-year vendor renegotiations and scope consolidation.
         </p>
       </div>
 
-      <!-- Interactive Filter Pills -->
-      <div class="no-print flex flex-wrap gap-2" role="tablist" aria-label="Filter case studies">
-        <button
-          data-filter="all"
-          class="filter-btn active rounded-xl bg-slate-900 px-3.5 py-2 text-xs sm:text-sm font-semibold text-white transition-all"
-        >
-          All Initiatives
-        </button>
-        <button
-          data-filter="cost-scale"
-          class="filter-btn rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          Cost &amp; Scale
-        </button>
-        <button
-          data-filter="data-ai"
-          class="filter-btn rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          Data &amp; AI
-        </button>
-        <button
-          data-filter="ma-governance"
-          class="filter-btn rounded-xl border border-slate-200 bg-white px-3.5 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          M&amp;A &amp; Governance
-        </button>
+      <div class="rounded-2xl bg-white border border-brand-line p-5 sm:p-6 shadow-xs">
+        <div class="text-3xl font-extrabold text-brand-navy tracking-tight mb-1.5">~40%</div>
+        <div class="text-sm font-bold text-brand-ink mb-1">Below Benchmark Run-Rate</div>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+          Kept headcount and total spend flat even as new business applications were added every year.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-brand-line p-5 sm:p-6 shadow-xs">
+        <div class="text-3xl font-extrabold text-brand-navy tracking-tight mb-1.5">2 M&amp;As</div>
+        <div class="text-sm font-bold text-brand-ink mb-1">Post-Merger Integrations</div>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+          Led end-to-end systems, data, and team integration across two corporate acquisitions with full operational stability.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-brand-line p-5 sm:p-6 shadow-xs">
+        <div class="text-3xl font-extrabold text-brand-navy tracking-tight mb-1.5">35%</div>
+        <div class="text-sm font-bold text-brand-ink mb-1">Dev Effort Reduction</div>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed">
+          Built internal Data &amp; AI strategy and governed AI CoE with 24/7 global order and invoice automation.
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- Cards Grid -->
-    <div id="case-studies-grid" class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Card 1: Budget Discipline -->
-      <article data-category="cost-scale" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-sky-50 px-2.5 py-1 text-xs font-semibold text-sky-700">
-              Cost &amp; Scale
-            </span>
-            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg">
-              33% SAP Savings
-            </span>
+  <!-- Section: How I Lead -->
+  <section id="leadership" class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <div class="max-w-3xl mb-10">
+      <div class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+        Leadership Approach
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight mb-3">
+        Direction, Alignment &amp; Team Commitment
+      </h2>
+      <p class="text-base text-brand-muted">
+        At the senior leadership level, lasting value comes from shaping clear multi-year direction, aligning executive and operational leaders, and building committed global teams.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <div class="w-9 h-9 rounded-xl bg-brand-tint text-brand-navy font-bold text-sm flex items-center justify-center mb-4">
+          01
+        </div>
+        <h3 class="text-lg font-bold text-brand-ink mb-2.5">Enterprise Roadmaps &amp; Capital Allocation</h3>
+        <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+          Partner with the executive leadership team to prioritize multi-year technology investments across Finance, Supply Chain, Manufacturing, Quality, HR, and Commercial functions, ensuring every dollar in our $25M budget ties directly to measurable business value.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <div class="w-9 h-9 rounded-xl bg-brand-tint text-brand-navy font-bold text-sm flex items-center justify-center mb-4">
+          02
+        </div>
+        <h3 class="text-lg font-bold text-brand-ink mb-2.5">Direction, Alignment &amp; Team Commitment</h3>
+        <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+          Focus on setting clear direction and building shared alignment across business and IT leaders so global teams take ownership, collaborate across regions, and deliver with genuine commitment.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <div class="w-9 h-9 rounded-xl bg-brand-tint text-brand-navy font-bold text-sm flex items-center justify-center mb-4">
+          03
+        </div>
+        <h3 class="text-lg font-bold text-brand-ink mb-2.5">ERP-Agnostic Architecture &amp; Business Focus</h3>
+        <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+          Whether the core ledger runs on Oracle Fusion, Oracle EPM, SAP ECC/S/4HANA, or Oracle EBS, the core financial close, supply chain, quality, and master data governance principles remain the same. I simplify difficult technical trade-offs so business leaders can make confident decisions.
+        </p>
+      </div>
+
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <div class="w-9 h-9 rounded-xl bg-brand-tint text-brand-navy font-bold text-sm flex items-center justify-center mb-4">
+          04
+        </div>
+        <h3 class="text-lg font-bold text-brand-ink mb-2.5">Calm Diagnostic Judgment &amp; Talent Retention</h3>
+        <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+          Colleagues, vendors, and executives rely on direct diagnostic questions that cut through noise during M&amp;A integrations, audits, and security reviews. Investing in mentorship and clear career paths across our US, UK, India, China, and Brazil teams keeps retention high and protects institutional knowledge.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Key Results & Strategic Track Record -->
+  <section id="results" class="bg-white border-y border-brand-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div class="max-w-2xl">
+          <div class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+            Selected Work
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Budget Discipline &amp; Flat Headcount/Spend
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Renegotiated multi-year vendor contracts and consolidated overlapping scopes to cut annual SAP maintenance costs by 33% and keep overall application run-rates nearly 40% below industry benchmarks, while keeping headcount and total spend flat despite adding new applications each year through in-house skill building and high employee retention.
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight mb-3">
+            Key Results &amp; Strategic Track Record
+          </h2>
+          <p class="text-base text-brand-muted">
+            Filter enterprise initiatives across Finance, ERP &amp; Commercial systems, Data &amp; Applied AI, or M&amp;A, validation, and spend governance.
           </p>
         </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">$25M Budget</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">40% Below Benchmark</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Talent Retention</span>
-        </div>
-      </article>
 
-      <!-- Card 2: Enterprise Data & AI Delivery + AI CoE -->
-      <article data-category="data-ai" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-amber-50 px-2.5 py-1 text-xs font-semibold text-amber-800">
-              Data &amp; AI
+        <!-- Category Filter Pills -->
+        <div class="flex flex-wrap gap-2 no-print" role="tablist" aria-label="Filter Key Results">
+          <button type="button" class="filter-btn active px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-navy bg-brand-navy text-white transition cursor-pointer" data-filter="all">
+            All Work (6)
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-line bg-brand-warmBg text-brand-muted hover:border-brand-navy hover:text-brand-navy transition cursor-pointer" data-filter="mfg">
+            Finance, ERP &amp; Commercial
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-line bg-brand-warmBg text-brand-muted hover:border-brand-navy hover:text-brand-navy transition cursor-pointer" data-filter="ai">
+            Data &amp; Applied AI
+          </button>
+          <button type="button" class="filter-btn px-4 py-2 rounded-full text-xs sm:text-sm font-semibold border border-brand-line bg-brand-warmBg text-brand-muted hover:border-brand-navy hover:text-brand-navy transition cursor-pointer" data-filter="gov">
+            M&amp;A, CSV &amp; Spend
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Card 1 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="mfg">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
+              Finance &amp; Multi-ERP Modernization
             </span>
-            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg">
-              35% Dev Effort Cut
-            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              Global Oracle Fusion, EPM &amp; SAP Ecosystem Governance
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Directed multi-year roadmap and operations across Oracle Fusion, Oracle EPM Suite, SAP ECC, and Oracle EBS R12 supporting global financial close, planning, supply chain, and quality workflows.
+            </p>
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Enterprise Data &amp; AI Delivery + AI CoE
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Built the enterprise strategy for internal Data &amp; AI foundations and launched a governed AI Center of Excellence (CoE). Led Enterprise Data Warehouse modernization, Databricks prototyping, Qlik and Qlik AutoML predictive analytics, and production rollouts of Claude, Microsoft Copilot Studio, Oracle Fusion AI agents, Azure ML, GitHub Copilot, and Oracle APEX, cutting software development effort by 35% and automating global order and invoice processing for 24/7 operations.
-          </p>
-        </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">AI CoE</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Databricks &amp; Qlik</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Order &amp; Invoice AI</span>
-        </div>
-      </article>
-
-      <!-- Card 3: Hyderabad ODC -->
-      <article data-category="cost-scale" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-sky-50 px-2.5 py-1 text-xs font-semibold text-sky-700">
-              Cost &amp; Scale
-            </span>
-            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">
-              5 Countries
-            </span>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Reliable global financial close and operational stability across Americas, EMEA, APAC, and LATAM.
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Hyderabad Offshore Delivery Center (24/7 Follow-the-Sun)
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Built the organization's first Offshore Development Center (ODC) in Hyderabad from zero into a 24/7 follow-the-sun support and engineering organization across the US, UK, India, China, and Brazil, expanding engineering capacity while lowering unit delivery costs.
-          </p>
-        </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Built from Zero</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">24/7 Follow-the-Sun</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">65+ Global Staff</span>
-        </div>
-      </article>
+        </article>
 
-      <!-- Card 4: Post-Merger M&A Integration -->
-      <article data-category="ma-governance" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-indigo-50 px-2.5 py-1 text-xs font-semibold text-indigo-700">
+        <!-- Card 2 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="gov">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
+              Spend &amp; Vendor Discipline
+            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              33% SAP Maintenance Reduction &amp; Flat Spend Growth
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Consolidated overlapping scopes across 200+ applications and 40+ vendors, renegotiating multi-year ERP and support contracts while building in-house technical skills to reduce external contractor reliance.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Cut annual SAP maintenance by 33% and kept run-rates ~40% below industry benchmarks with flat headcount and spend.
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="ai">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
+              Data &amp; Applied AI
+            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              Data &amp; AI Foundations &amp; Internal AI Center of Excellence
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Defined the enterprise strategy for internal Data &amp; AI foundations, modernized the Enterprise Data Warehouse with Databricks prototyping, and launched a governed AI CoE deploying Claude, Microsoft Copilot Studio, Oracle Fusion AI Agents, Azure ML, and GitHub Copilot.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Cut software development effort by 35% and automated global order and invoice processing for 24/7 operations.
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="mfg">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
+              Commercial &amp; Order-to-Cash
+            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              Global Customer Portal, Pricing &amp; Quotation Transformation
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Led business analysis, architecture, and delivery for the My Colorcon customer portal digitization alongside custom in-house pricing, quotation, and sample delivery systems integrated via OIC and Boomi.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Streamlined global customer ordering, accelerated quote turnaround, and connected commercial teams directly with ERP.
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="gov">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
               M&amp;A Integration
             </span>
-            <span class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg">
-              Full Stability
-            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              Post-Merger Systems &amp; Team Integration (2 Acquisitions)
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Led business systems, data, and team integration for two corporate acquisitions across Oracle Fusion, SAP ECC, Oracle EBS R12, TCS iON, Cornerstone, and HubSpot, connected through Oracle Integration Cloud (OIC) and Boomi.
+            </p>
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Post-Merger M&amp;A Integration (Two Acquisitions)
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Executed post-merger systems and team integration for two recent acquisitions, consolidating business applications and support operations while maintaining full system stability and availability across global sites.
-          </p>
-        </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Systems Consolidation</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Team Alignment</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Zero Disruption</span>
-        </div>
-      </article>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Smooth operational onboarding with full system stability across finance, commercial, and supply chain teams.
+          </div>
+        </article>
 
-      <!-- Card 5: CSV, TPRM & Cybersecurity Governance -->
-      <article data-category="ma-governance" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-teal-50 px-2.5 py-1 text-xs font-semibold text-teal-800">
-              Compliance, CSV &amp; Risk Governance
+        <!-- Card 6 -->
+        <article class="case-card rounded-2xl bg-brand-warmBg border border-brand-line p-6 sm:p-7 flex flex-col justify-between hover:shadow-sm transition" data-category="gov">
+          <div>
+            <span class="inline-block px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold uppercase tracking-wide mb-3.5">
+              Life Sciences Compliance
             </span>
-            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">
-              Audit Ready
-            </span>
+            <h3 class="text-lg font-bold text-brand-ink mb-2.5">
+              End-to-End CSV, ALM, Access Control &amp; Vendor Risk (TPRM)
+            </h3>
+            <p class="text-sm sm:text-[15px] text-brand-inkSub leading-relaxed mb-5">
+              Own Computer System Validation (CSV), validation documentation, Application Lifecycle Management (ALM), Change Advisory Board (CAB) governance, RBAC, and Third-Party Risk Management (TPRM) reviews through Brexit, COVID-19, and regulatory audits.
+            </p>
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Computer System Validation (CSV), TPRM &amp; Cybersecurity Governance
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Own end-to-end Computer System Validation (CSV) and all validation documentation, Application Lifecycle Management (ALM), regulatory audit compliance, enterprise role-based access control, Change Advisory Board (CAB) leadership, and vendor cybersecurity / Third-Party Risk Management (TPRM) through plant expansions, Brexit, and COVID-19.
-          </p>
-        </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">CSV &amp; Validation</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">TPRM &amp; RBAC</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">CAB Governance</span>
-        </div>
-      </article>
-
-      <!-- Card 6: Commercial Customer Portals & Custom Platforms -->
-      <article data-category="cost-scale data-ai" class="case-card exec-card flex flex-col justify-between rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-        <div>
-          <div class="flex items-center justify-between gap-2">
-            <span class="inline-flex items-center rounded-lg bg-sky-50 px-2.5 py-1 text-xs font-semibold text-sky-700">
-              Commercial &amp; Core Apps
-            </span>
-            <span class="text-xs font-bold text-slate-700 bg-slate-100 px-2.5 py-1 rounded-lg">
-              200+ Apps
-            </span>
+          <div class="pt-3.5 border-t border-brand-line text-xs sm:text-sm font-semibold text-brand-ink">
+            Result: Consistent regulatory and internal audit readiness without slowing software delivery across regulated operations.
           </div>
-          <h3 class="mt-4 font-display text-lg font-bold text-slate-900">
-            Commercial Customer Portals &amp; Custom In-House Platforms
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-slate-600">
-            Manage and support multi-platform ERP, EPM, HR, and CRM operations (Oracle Fusion, Oracle EPM Suite, SAP ECC, Oracle EBS R12, TCS iON, Cornerstone, HubSpot), commercial customer portals, and a broad suite of custom in-house business applications (pricing, quotation, and sample development and delivery workflows) with formal DevOps and CI/CD reliability.
-          </p>
-        </div>
-        <div class="mt-5 border-t border-slate-100 pt-3.5 flex flex-wrap gap-1.5">
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Customer Portals</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">Pricing &amp; Quoting</span>
-          <span class="rounded-md bg-slate-100 px-2 py-0.5 text-xs font-medium text-slate-700">DevOps &amp; CI/CD</span>
-        </div>
-      </article>
+        </article>
+      </div>
     </div>
   </section>
 
-  <!-- Interactive Technical & Leadership Capabilities Matrix -->
-  <section id="capabilities" class="border-y border-slate-200 bg-white py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">Core Strengths &amp; Technical Portfolio</span>
-        <h2 class="mt-1 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Technical &amp; Leadership Capabilities Matrix
+  <!-- Section: Core Capabilities (Interactive Tabs) -->
+  <section id="capabilities" class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <div class="max-w-2xl mb-8">
+      <div class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+        Core Capabilities
+      </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight mb-3">
+        Systems, Data &amp; Governance Portfolio
+      </h2>
+      <p class="text-base text-brand-muted">
+        Select a category to view the enterprise platforms, analytics foundations, and governance controls I oversee.
+      </p>
+    </div>
+
+    <!-- Tab Buttons -->
+    <div class="flex flex-wrap gap-2.5 pb-5 mb-6 border-b border-brand-line no-print" role="tablist" aria-label="Capability Domains">
+      <button type="button" class="tab-btn active px-4 py-2.5 rounded-xl text-sm font-semibold bg-brand-ink text-white border border-brand-ink transition cursor-pointer" data-tab="panel-erp">
+        Finance, ERP &amp; Commercial Systems
+      </button>
+      <button type="button" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-semibold bg-white text-brand-muted border border-brand-line hover:border-brand-navy hover:text-brand-navy transition cursor-pointer" data-tab="panel-ai">
+        Analytics, Data &amp; Applied AI
+      </button>
+      <button type="button" class="tab-btn px-4 py-2.5 rounded-xl text-sm font-semibold bg-white text-brand-muted border border-brand-line hover:border-brand-navy hover:text-brand-navy transition cursor-pointer" data-tab="panel-gov">
+        Capital Allocation, CSV &amp; Risk
+      </button>
+    </div>
+
+    <!-- Tab Panel 1 -->
+    <div id="panel-erp" class="tab-panel rounded-2xl bg-white border border-brand-line p-6 sm:p-8 shadow-xs">
+      <h3 class="text-lg sm:text-xl font-bold text-brand-ink mb-2">
+        Global Finance, Multi-ERP Platforms, Commercial Systems &amp; Supply Chain
+      </h3>
+      <p class="text-sm sm:text-base text-brand-muted mb-6 max-w-3xl">
+        Operational accountability across global Finance, ERP, EPM, HR, CRM, customer portals, and supply chain platforms, connecting corporate strategy and commercial execution with reliable daily operations.
+      </p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle Fusion Cloud</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle EPM Suite (Planning &amp; Close)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">SAP ECC / S/4HANA Readiness</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle EBS R12</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">TCS iON</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">WMS, EAM &amp; Custom S&amp;OP</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle Integration Cloud (OIC)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Boomi iPaaS</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle APEX</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Cornerstone (HR)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">HubSpot (CRM)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Custom Pricing, Quote &amp; Sample Portals</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">ServiceNow</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Agile, DevOps &amp; CI/CD</span>
+      </div>
+    </div>
+
+    <!-- Tab Panel 2 -->
+    <div id="panel-ai" class="tab-panel hidden rounded-2xl bg-white border border-brand-line p-6 sm:p-8 shadow-xs">
+      <h3 class="text-lg sm:text-xl font-bold text-brand-ink mb-2">
+        Enterprise Data Foundations, BI &amp; Governed AI Center of Excellence
+      </h3>
+      <p class="text-sm sm:text-base text-brand-muted mb-6 max-w-3xl">
+        Practical data and AI programs that modernize core warehousing, automate high-volume order and invoice workflows, and speed up engineering delivery under clear governance.
+      </p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Enterprise Data &amp; AI Strategy</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">AI Center of Excellence (CoE)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Enterprise Data Warehouse (EDW)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Databricks Prototyping</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Claude (Anthropic)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Microsoft Copilot Studio</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Oracle Fusion AI Agents</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Azure Machine Learning</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">GitHub Copilot</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Qlik &amp; Qlik AutoML</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Order-to-Cash &amp; Invoice Automation</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">AI Agent &amp; Data Governance</span>
+      </div>
+    </div>
+
+    <!-- Tab Panel 3 -->
+    <div id="panel-gov" class="tab-panel hidden rounded-2xl bg-white border border-brand-line p-6 sm:p-8 shadow-xs">
+      <h3 class="text-lg sm:text-xl font-bold text-brand-ink mb-2">
+        Capital Discipline, Regulatory Validation &amp; Enterprise Risk
+      </h3>
+      <p class="text-sm sm:text-base text-brand-muted mb-6 max-w-3xl">
+        Governance built for regulated life sciences and global enterprises, balancing capital discipline with reliable quality, validation, and cybersecurity standards.
+      </p>
+      <div class="flex flex-wrap gap-2.5">
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">$25M IT Budget &amp; Capital Allocation</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Vendor Negotiations (40+ Vendors)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Computer System Validation (CSV)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Validation Documentation &amp; Audits</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Application Lifecycle Management (ALM)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Enterprise Master Data Governance</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Change Advisory Board (CAB) Chair</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Role-Based Access Control (RBAC)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Third-Party Risk Management (TPRM)</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Cybersecurity &amp; Tabletop Reviews</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Post-Merger M&amp;A Integration</span>
+        <span class="px-3.5 py-1.5 rounded-xl bg-brand-warmSurface border border-brand-line text-xs sm:text-sm font-semibold text-brand-inkSub">Global ODC Scaling (65+ Staff)</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Career Progression -->
+  <section id="experience" class="bg-white border-y border-brand-line">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+      <div class="max-w-2xl mb-12">
+        <div class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+          20+ Years of Experience
+        </div>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight mb-3">
+          Career Progression
         </h2>
-        <p class="mt-2 text-sm sm:text-base text-slate-600">
-          Comprehensive command across executive governance, multi-ERP commercial ecosystems, and governed enterprise AI platforms.
+        <p class="text-base text-brand-muted">
+          Progressive leadership across global enterprise applications, finance and operations, offshore engineering, and enterprise data and AI.
         </p>
       </div>
 
-      <!-- Interactive Tabs -->
-      <div class="no-print mt-8 flex flex-wrap gap-2 border-b border-slate-200 pb-4" role="tablist" aria-label="Capability domains">
-        <button
-          data-cap-tab="all"
-          class="cap-tab-btn active rounded-xl bg-slate-900 px-4 py-2 text-xs sm:text-sm font-semibold text-white transition-all"
-        >
-          All Domains (3)
-        </button>
-        <button
-          data-cap-tab="leadership"
-          class="cap-tab-btn rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          Leadership &amp; Governance
-        </button>
-        <button
-          data-cap-tab="enterprise"
-          class="cap-tab-btn rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          Enterprise Applications &amp; Integration
-        </button>
-        <button
-          data-cap-tab="data-ai"
-          class="cap-tab-btn rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-xs sm:text-sm font-medium text-slate-700 hover:bg-slate-100 transition-all"
-        >
-          Data, Analytics &amp; Applied AI
-        </button>
-      </div>
-
-      <!-- Domain Panels -->
-      <div class="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
-        <!-- Domain 1: Leadership & Governance -->
-        <div data-cap-panel="leadership" class="cap-panel rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex items-center gap-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">
-              <i data-lucide="shield-check" class="h-5 w-5"></i>
-            </div>
-            <div>
-              <h3 class="font-display text-base font-bold text-slate-900">Leadership &amp; Governance</h3>
-              <p class="text-xs text-slate-500">Executive Strategy, Risk &amp; Compliance</p>
-            </div>
+      <div class="space-y-6">
+        <!-- Role 1 -->
+        <div class="rounded-2xl bg-brand-warmBg border border-brand-line border-l-4 border-l-brand-navy p-6 sm:p-7">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+            <h3 class="text-lg sm:text-xl font-bold text-brand-ink">
+              Director - Enterprise Applications &amp; Analytics
+            </h3>
+            <span class="px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold">
+              03/2023 - Present
+            </span>
           </div>
-          <div class="mt-5 flex flex-wrap gap-2">
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">$25M IT Budget &amp; P&amp;L Ownership</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Fast Diagnostic Decision-Making</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Executive &amp; Board Advisory</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Vendor Negotiations &amp; Third-Party Risk Management (TPRM)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Data &amp; AI Governance</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Computer System Validation (CSV) &amp; Validation Documentation</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Role-Based Access Control &amp; Audit Compliance</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Change Advisory Board (CAB) Leadership</span>
+          <div class="text-sm font-semibold text-brand-muted mb-4">
+            Colorcon • Harleysville, PA (Global Pharmaceutical Excipient Manufacturer)
           </div>
+          <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+            <li>Lead global enterprise applications, multi-year technology roadmaps, analytics, and AI initiatives across Americas, EMEA, APAC, and LATAM, managing a $25M annual IT budget and 65+ global staff while partnering with the executive leadership team.</li>
+            <li>Oversee 200+ business applications across 40+ vendors (Oracle Fusion, Oracle EPM Suite, SAP ECC, Oracle EBS, TCS iON, Cornerstone, HubSpot, customer portals, and custom pricing, quotation, and sample delivery systems) integrated via OIC and Boomi.</li>
+            <li>Executed post-merger systems, data, and team integration for 2 corporate acquisitions and led core enterprise system rollouts across new international operations while maintaining global business continuity.</li>
+            <li>Cut annual SAP maintenance costs by 33% and held run-rates nearly 40% below industry benchmarks, keeping headcount and total spend flat despite adding new applications annually.</li>
+            <li>Built internal Data &amp; AI foundations strategy and governed AI CoE (EDW, Databricks prototyping, Claude, Microsoft Copilot Studio, Oracle Fusion AI Agents, Azure ML, GitHub Copilot, Oracle APEX), cutting software development effort by 35%.</li>
+            <li>Own end-to-end CSV and validation documentation, ALM, regulatory audit compliance, data and AI agent governance, RBAC, and vendor cybersecurity / TPRM reviews.</li>
+          </ul>
         </div>
 
-        <!-- Domain 2: Enterprise Applications & Integration -->
-        <div data-cap-panel="enterprise" class="cap-panel rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex items-center gap-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-700 text-white">
-              <i data-lucide="cpu" class="h-5 w-5"></i>
-            </div>
-            <div>
-              <h3 class="font-display text-base font-bold text-slate-900">Enterprise Applications &amp; Integration</h3>
-              <p class="text-xs text-slate-500">200+ Business Apps Across 40+ Vendors</p>
-            </div>
+        <!-- Role 2 -->
+        <div class="rounded-2xl bg-brand-warmBg border border-brand-line border-l-4 border-l-brand-navy p-6 sm:p-7">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+            <h3 class="text-lg sm:text-xl font-bold text-brand-ink">
+              Manager - IT Finance &amp; Operations Services
+            </h3>
+            <span class="px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold">
+              01/2019 - 02/2023
+            </span>
           </div>
-          <div class="mt-5 flex flex-wrap gap-2">
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Application Lifecycle Management (ALM)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">ERP (Oracle Fusion, SAP ECC, Oracle EBS R12, TCS iON)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Oracle EPM Suite</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">HR (Cornerstone)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">CRM (HubSpot)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Commercial Customer Portals</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Custom In-House Business Applications (Pricing, Quotation, Sample Development &amp; Delivery)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Supply Chain (WMS, EAM, S&amp;OP)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">iPaaS (Oracle Integration Cloud [OIC], Boomi)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Low-Code (Oracle APEX)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">ServiceNow</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Global ODC Scaling</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">24/7 Follow-the-Sun Support</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">DevOps &amp; CI/CD</span>
+          <div class="text-sm font-semibold text-brand-muted mb-4">
+            Colorcon • Harleysville, PA
           </div>
+          <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+            <li>Directed strategy, budgets, and service delivery for 65% of the global enterprise applications portfolio across Finance, HR, Manufacturing, Quality, and Supply Chain.</li>
+            <li>Delivered end-to-end implementations of Warehouse Management (WMS), Oracle EPM Suite, Enterprise Asset Management (EAM), and a custom S&amp;OP solution.</li>
+            <li>Maintained regulatory compliance, audit readiness, access control, and cybersecurity governance through Brexit regulatory shifts and COVID-19 remote transitions while mentoring leads in the Hyderabad ODC.</li>
+          </ul>
         </div>
 
-        <!-- Domain 3: Data, Analytics & Applied AI -->
-        <div data-cap-panel="data-ai" class="cap-panel rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex items-center gap-3">
-            <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-600 text-white">
-              <i data-lucide="sparkles" class="h-5 w-5"></i>
-            </div>
-            <div>
-              <h3 class="font-display text-base font-bold text-slate-900">Data, Analytics &amp; Applied AI</h3>
-              <p class="text-xs text-slate-500">AI CoE, Modern Data Platforms &amp; Automation</p>
-            </div>
+        <!-- Role 3 -->
+        <div class="rounded-2xl bg-brand-warmBg border border-brand-line border-l-4 border-l-brand-navy p-6 sm:p-7">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+            <h3 class="text-lg sm:text-xl font-bold text-brand-ink">
+              Manager - Global Applications Services &amp; Development (Progressive from IT Business Analyst)
+            </h3>
+            <span class="px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold">
+              02/2010 - 12/2018
+            </span>
           </div>
-          <div class="mt-5 flex flex-wrap gap-2">
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Enterprise Data &amp; AI Foundations Strategy</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">AI Center of Excellence (CoE) Leadership</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Enterprise Data Warehouse (EDW)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Databricks Prototyping</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Applied AI &amp; Agents (Claude, Microsoft Copilot Studio, Oracle Fusion AI Agents, Azure ML, GitHub Copilot)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">BI &amp; Predictive Analytics (Qlik, Qlik AutoML)</span>
-            <span class="rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-medium text-slate-800 shadow-2xs">Workflow Automation</span>
+          <div class="text-sm font-semibold text-brand-muted mb-4">
+            Colorcon • Harleysville, PA
           </div>
+          <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+            <li>Established the organization's first Offshore Development Center (ODC) in Hyderabad from scratch and operationalized a 24/7 follow-the-sun support and delivery model across the US, UK, India, China, and Brazil.</li>
+            <li>Chaired IT Change Advisory Board (CAB) governance, supported international expansions and restructurings through localized ERP readiness, and led the global Oracle EBS R12 upgrade and My Colorcon customer portal digitization alongside 60+ external consultants.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="rounded-2xl bg-brand-warmBg border border-brand-line border-l-4 border-l-brand-navy p-6 sm:p-7">
+          <div class="flex flex-wrap items-baseline justify-between gap-2 mb-1">
+            <h3 class="text-lg sm:text-xl font-bold text-brand-ink">
+              Founding Offshore Consultant &amp; Software Engineer
+            </h3>
+            <span class="px-3 py-1 rounded-lg bg-brand-tint text-brand-navy text-xs font-bold">
+              12/2005 - 01/2010
+            </span>
+          </div>
+          <div class="text-sm font-semibold text-brand-muted mb-4">
+            Optima Technology Partners (Colorcon Account) &amp; Accenture • India
+          </div>
+          <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub leading-relaxed">
+            <li>Served as founding offshore consultant establishing onshore-offshore delivery frameworks and custom enterprise solutions for Colorcon (2006-2010), following early Oracle enterprise engineering at Accenture (2005-2006).</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Career Progression Timeline -->
-  <section id="experience" class="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8">
-    <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between border-b border-slate-200 pb-6">
-      <div>
-        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">Executive Leadership Progression</span>
-        <h2 class="mt-1 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Career Progression
-        </h2>
+  <!-- Section: Education & Certifications -->
+  <section id="credentials" class="max-w-6xl mx-auto px-5 sm:px-8 py-16 sm:py-20">
+    <div class="max-w-2xl mb-10">
+      <div class="text-xs font-bold uppercase tracking-wider text-brand-navy mb-2">
+        Education &amp; Leadership Development
       </div>
-      <div class="text-left sm:text-right">
-        <p class="font-display text-lg font-bold text-slate-900">COLORCON <span class="font-normal text-slate-500">| Harleysville, PA</span></p>
-        <p class="text-xs sm:text-sm text-slate-600">Global specialty chemical and pharmaceutical excipient manufacturer across 50+ international locations</p>
-      </div>
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-brand-ink tracking-tight">
+        Academic Foundation &amp; Leadership Programs
+      </h2>
     </div>
 
-    <!-- Vertical Timeline -->
-    <div class="relative mt-10 space-y-8 before:absolute before:inset-0 before:ml-4 before:h-full before:w-0.5 before:bg-slate-200 sm:before:ml-6">
-      <!-- Role 1 -->
-      <div class="relative pl-12 sm:pl-16">
-        <span class="absolute left-1.5 sm:left-3.5 top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-sky-600 ring-4 ring-sky-100">
-          <span class="h-2 w-2 rounded-full bg-white"></span>
-        </span>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <h3 class="font-display text-lg sm:text-xl font-bold text-slate-900">
-              Director – Enterprise Applications &amp; Analytics
-            </h3>
-            <span class="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-800 border border-sky-200">
-              03/2023 – Present
-            </span>
-          </div>
-          <ul class="mt-4 space-y-2.5 text-sm leading-relaxed text-slate-600">
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Direct global enterprise applications, new project delivery, data analytics, and AI initiatives across North America, EMEA, APAC, and LATAM, partnering with the CEO, CFO, and CDO on multi-year roadmaps, capital allocation, and DevOps and CI/CD reliability.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Manage and support multi-platform ERP, EPM, HR, and CRM operations (Oracle Fusion, Oracle EPM Suite, SAP ECC, Oracle EBS, TCS iON, Cornerstone, HubSpot), ServiceNow, commercial customer portals, and a broad suite of custom in-house business applications (pricing, quotation, and sample development and delivery workflows), integrated via OIC and Boomi.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Executed post-merger systems and team integration for two recent acquisitions, consolidating business applications and support operations while maintaining full system stability and availability across global sites.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Build strong in-house technical capabilities and maintain high employee retention across global teams through clear career paths and mentorship, reducing contractor reliance and keeping headcount and total spend flat as new applications are added each year.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Spearheaded Enterprise Data Warehouse modernization, Databricks prototyping, Qlik and Qlik AutoML analytics, and production rollouts of Claude, Microsoft Copilot Studio, Oracle Fusion AI agents, Azure ML, GitHub Copilot, and Oracle APEX to accelerate engineering delivery and automate order-to-cash and invoice workflows.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-sky-600 mt-1 shrink-0"></i>
-              <span>Own end-to-end Computer System Validation (CSV) and all validation documentation, ALM, regulatory audit compliance, data and AI agent governance, enterprise role-based access control, and vendor cybersecurity / TPRM reviews.</span>
-            </li>
-          </ul>
-        </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <h3 class="text-base font-bold text-brand-ink mb-3">Education</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub">
+          <li>
+            <strong class="text-brand-ink">Bachelor of Technology (B.Tech) in Electrical &amp; Electronics Engineering</strong>, RVR &amp; JC College of Engineering, India
+          </li>
+        </ul>
       </div>
 
-      <!-- Role 2 -->
-      <div class="relative pl-12 sm:pl-16">
-        <span class="absolute left-1.5 sm:left-3.5 top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-slate-700 ring-4 ring-slate-100">
-          <span class="h-2 w-2 rounded-full bg-white"></span>
-        </span>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <h3 class="font-display text-lg sm:text-xl font-bold text-slate-900">
-              Manager – IT Finance &amp; Operations Services
-            </h3>
-            <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
-              01/2019 – 02/2023
-            </span>
-          </div>
-          <ul class="mt-4 space-y-2.5 text-sm leading-relaxed text-slate-600">
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-slate-500 mt-1 shrink-0"></i>
-              <span>Directed strategy, budgets, and service delivery for 65% of the global enterprise applications portfolio across Finance, HR, Manufacturing, Quality, and Supply Chain, delivering end-to-end implementations of WMS, Oracle EPM Suite, EAM, and a custom S&amp;OP solution.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-slate-500 mt-1 shrink-0"></i>
-              <span>Maintained regulatory compliance, audit readiness, access control, and cybersecurity governance through Brexit and COVID-19 while mentoring leads in the Hyderabad ODC.</span>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- Role 3 -->
-      <div class="relative pl-12 sm:pl-16">
-        <span class="absolute left-1.5 sm:left-3.5 top-1.5 flex h-5 w-5 items-center justify-center rounded-full bg-slate-500 ring-4 ring-slate-100">
-          <span class="h-2 w-2 rounded-full bg-white"></span>
-        </span>
-        <div class="rounded-2xl border border-slate-200 bg-white p-6 sm:p-7 shadow-sm">
-          <div class="flex flex-wrap items-center justify-between gap-2">
-            <div>
-              <h3 class="font-display text-lg sm:text-xl font-bold text-slate-900">
-                Manager &ndash; Global Applications Services &amp; Development
-              </h3>
-            </div>
-            <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
-              06/2013 &ndash; 12/2018
-            </span>
-          </div>
-          <ul class="mt-4 space-y-2.5 text-sm leading-relaxed text-slate-600">
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-slate-500 mt-1 shrink-0"></i>
-              <span>Established the organization's first Offshore Development Center (ODC) in Hyderabad from the ground up and operationalized a 24/7 follow-the-sun support and delivery model across the US, UK, India, China, and Brazil, expanding engineering capacity while lowering unit delivery costs.</span>
-            </li>
-            <li class="flex items-start gap-2.5">
-              <i data-lucide="chevron-right" class="h-4 w-4 text-slate-500 mt-1 shrink-0"></i>
-              <span>Chaired IT Change Advisory Board (CAB) governance and supported international plant openings and corporate restructurings through localized ERP readiness.</span>
-            </li>
-          </ul>
-        </div>
+      <div class="rounded-2xl bg-white border border-brand-line p-6 sm:p-7 shadow-xs">
+        <h3 class="text-base font-bold text-brand-ink mb-3">Certifications &amp; Leadership Programs</h3>
+        <ul class="list-disc pl-5 space-y-2 text-sm sm:text-[15px] text-brand-inkSub">
+          <li><strong class="text-brand-ink">Project Management Professional (PMP)</strong>, Project Management Institute</li>
+          <li><strong class="text-brand-ink">AMplify Leadership Program</strong>, Leadership Development Program</li>
+          <li><strong class="text-brand-ink">Enterprise People Management Leadership Program</strong>, Global People &amp; Organizational Leadership</li>
+        </ul>
       </div>
     </div>
+  </section>
 
-    <!-- Earlier Career Progression Sub-Section (2005 – 2013) -->
-    <div class="mt-14 pt-10 border-t border-slate-200">
-      <div class="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:justify-between">
+  <!-- Footer -->
+  <footer id="contact" class="site-footer bg-brand-ink text-zinc-200">
+    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-14 sm:py-16">
+      <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-8 pb-10 border-b border-white/15">
+        <div class="max-w-xl">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight mb-2.5">Let's Connect</h2>
+          <p class="text-sm sm:text-base text-zinc-300 leading-relaxed">
+            Open to conversations regarding Vice President, Senior Director, and Executive Director opportunities in Enterprise Applications, ERP Transformation, Finance &amp; Business Systems, and Data &amp; AI.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 no-print">
+          <button type="button" onclick="copyToClipboard('yagna.vasu@gmail.com', 'Email copied')" class="px-4 py-2.5 rounded-xl bg-white text-brand-ink text-sm font-semibold hover:bg-zinc-100 transition cursor-pointer shadow-xs">
+            Copy Email
+          </button>
+          <button type="button" onclick="copyToClipboard('267-660-8456', 'Phone copied')" class="px-4 py-2.5 rounded-xl bg-transparent text-white border border-white/30 text-sm font-semibold hover:bg-white/10 transition cursor-pointer">
+            Copy Phone
+          </button>
+          <a href="https://www.linkedin.com/in/yagna-madasu-4b5a9b18/" target="_blank" rel="noopener" class="px-4 py-2.5 rounded-xl bg-transparent text-white border border-white/30 text-sm font-semibold hover:bg-white/10 transition">
+            LinkedIn
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs sm:text-sm text-zinc-400">
+        <div>Yagna Madasu • Colmar, PA • 267-660-8456 • yagna.vasu@gmail.com</div>
         <div>
-          <span class="text-xs font-bold uppercase tracking-wider text-amber-700">Foundational Delivery &amp; Consulting Trajectory</span>
-          <h3 class="mt-0.5 font-display text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
-            EARLIER CAREER PROGRESSION
-          </h3>
+          <a href="https://ymadasu.github.io" class="text-zinc-300 hover:underline">https://ymadasu.github.io</a>
         </div>
-        <span class="inline-flex w-fit items-center rounded-full border border-slate-200 bg-white px-3.5 py-1 text-xs font-semibold text-slate-600 shadow-2xs">
-          2005 &ndash; 2013
-        </span>
-      </div>
-
-      <div class="relative mt-8 space-y-6 before:absolute before:inset-0 before:ml-4 before:h-full before:w-0.5 before:bg-slate-200 sm:before:ml-6">
-        <!-- Earlier Role 1: Colorcon IT Business Analyst -->
-        <div class="relative pl-12 sm:pl-16">
-          <span class="absolute left-1.5 sm:left-3.5 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-amber-600 ring-4 ring-amber-50">
-            <span class="h-2 w-2 rounded-full bg-white"></span>
-          </span>
-          <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <h4 class="font-display text-base sm:text-lg font-bold text-slate-900">
-                Colorcon <span class="font-normal text-slate-400">|</span> <span class="text-sky-800">IT Business Analyst</span>
-              </h4>
-              <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
-                02/2010 &ndash; 05/2013
-              </span>
-            </div>
-            <p class="mt-2.5 text-sm leading-relaxed text-slate-600">
-              Led business analysis for the My Colorcon customer portal digitization; served as key analyst for global Oracle EBS R12 upgrade partnering with 60+ external consultants.
-            </p>
-          </div>
-        </div>
-
-        <!-- Earlier Role 2: Optima Technology Partners -->
-        <div class="relative pl-12 sm:pl-16">
-          <span class="absolute left-1.5 sm:left-3.5 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-slate-600 ring-4 ring-slate-100">
-            <span class="h-2 w-2 rounded-full bg-white"></span>
-          </span>
-          <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <h4 class="font-display text-base sm:text-lg font-bold text-slate-900">
-                Optima Technology Partners <span class="font-normal text-slate-400">|</span> <span class="text-sky-800">Programmer Analyst</span>
-              </h4>
-              <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
-                01/2006 &ndash; 01/2010
-              </span>
-            </div>
-            <p class="mt-2.5 text-sm leading-relaxed text-slate-600">
-              Served as founding offshore consultant for Colorcon; established offshore-onshore delivery frameworks and developed custom reporting/application solutions.
-            </p>
-          </div>
-        </div>
-
-        <!-- Earlier Role 3: Accenture -->
-        <div class="relative pl-12 sm:pl-16">
-          <span class="absolute left-1.5 sm:left-3.5 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-slate-500 ring-4 ring-slate-100">
-            <span class="h-2 w-2 rounded-full bg-white"></span>
-          </span>
-          <div class="rounded-2xl border border-slate-200 bg-white p-5 sm:p-6 shadow-sm">
-            <div class="flex flex-wrap items-center justify-between gap-2">
-              <h4 class="font-display text-base sm:text-lg font-bold text-slate-900">
-                Accenture <span class="font-normal text-slate-400">|</span> <span class="text-sky-800">Software Engineer</span>
-              </h4>
-              <span class="inline-flex items-center rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-700">
-                12/2005 &ndash; 06/2006
-              </span>
-            </div>
-            <p class="mt-2.5 text-sm leading-relaxed text-slate-600">
-              Developed reusable automation tools and delivered Oracle practice enterprise implementations.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Education, Certifications & Executive Programs -->
-  <section id="education" class="border-t border-slate-200 bg-white py-16 sm:py-20">
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-      <div class="max-w-3xl">
-        <span class="text-xs font-bold uppercase tracking-wider text-sky-700">Academic &amp; Leadership Credentials</span>
-        <h2 class="mt-1 font-display text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-          Education, Certifications &amp; Executive Programs
-        </h2>
-      </div>
-
-      <div class="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-        <!-- Degree -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-white">
-            <i data-lucide="graduation-cap" class="h-5 w-5"></i>
-          </div>
-          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Undergraduate Degree</p>
-          <h3 class="mt-1 font-display text-base font-bold text-slate-900">
-            B.Tech in Electrical &amp; Electronics Engineering
-          </h3>
-          <p class="mt-1.5 text-xs text-slate-600">
-            RVR &amp; JC College of Engineering, India
-          </p>
-        </div>
-
-        <!-- PMP -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-sky-700 text-white">
-            <i data-lucide="award" class="h-5 w-5"></i>
-          </div>
-          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Global Certification</p>
-          <h3 class="mt-1 font-display text-base font-bold text-slate-900">
-            PMP Certified
-          </h3>
-          <p class="mt-1.5 text-xs text-slate-600">
-            Project Management Institute (PMI)
-          </p>
-        </div>
-
-        <!-- Amplify -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-600 text-white">
-            <i data-lucide="compass" class="h-5 w-5"></i>
-          </div>
-          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Executive Development</p>
-          <h3 class="mt-1 font-display text-base font-bold text-slate-900">
-            Amplify Leadership Program
-          </h3>
-          <p class="mt-1.5 text-xs text-slate-600">
-            Executive Leadership &amp; Strategic Influence
-          </p>
-        </div>
-
-        <!-- Enterprise People Management -->
-        <div class="rounded-2xl border border-slate-200 bg-slate-50/70 p-6">
-          <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-white">
-            <i data-lucide="users" class="h-5 w-5"></i>
-          </div>
-          <p class="mt-4 text-xs font-semibold uppercase tracking-wider text-slate-500">Leadership Development</p>
-          <h3 class="mt-1 font-display text-base font-bold text-slate-900">
-            Enterprise People Management Leadership Program
-          </h3>
-          <p class="mt-1.5 text-xs text-slate-600">
-            Global Organizational Leadership &amp; Talent Retention
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Executive Contact Footer -->
-  <footer id="contact" class="bg-slate-900 text-white">
-    <div class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
-      <div class="rounded-3xl border border-slate-700/80 bg-slate-800/60 p-8 sm:p-10 lg:p-12">
-        <div class="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
-          <div class="lg:col-span-7">
-            <span class="inline-flex items-center rounded-full bg-sky-500/15 px-3 py-1 text-xs font-semibold text-sky-300 border border-sky-500/30">
-              Executive Inquiries &amp; Leadership Opportunities
-            </span>
-            <h2 class="mt-4 font-display text-2xl font-bold tracking-tight text-white sm:text-3xl">
-              Let's Discuss Enterprise Transformation, ERP Modernization &amp; Applied AI
-            </h2>
-            <p class="mt-3 max-w-2xl text-sm sm:text-base leading-relaxed text-slate-300">
-              Available for senior executive technology leadership conversations across the Greater Philadelphia, PA, NJ, and global life sciences corridor.
-            </p>
-          </div>
-
-          <div class="lg:col-span-5">
-            <div class="rounded-2xl border border-slate-700 bg-slate-900/90 p-6 space-y-4">
-              <!-- Copy Email Row -->
-              <div class="flex items-center justify-between gap-3 rounded-xl border border-slate-700/80 bg-slate-800/80 px-4 py-3">
-                <div class="flex items-center gap-3 min-w-0">
-                  <i data-lucide="mail" class="h-4 w-4 text-sky-400 shrink-0"></i>
-                  <span class="truncate text-sm font-medium text-white">yagna.vasu@gmail.com</span>
-                </div>
-                <button
-                  onclick="copyEmail()"
-                  class="no-print inline-flex items-center gap-1.5 rounded-lg bg-sky-600 px-3 py-1.5 text-xs font-semibold text-white hover:bg-sky-500 transition-colors shrink-0"
-                >
-                  <i data-lucide="copy" class="h-3.5 w-3.5"></i>
-                  <span>Copy Email</span>
-                </button>
-              </div>
-
-              <!-- Phone & Location -->
-              <div class="grid grid-cols-1 gap-3 sm:grid-cols-2">
-                <a
-                  href="tel:2676608456"
-                  class="flex items-center gap-2.5 rounded-xl border border-slate-700/80 bg-slate-800/50 px-4 py-3 text-sm font-medium text-slate-200 hover:border-slate-500 hover:text-white transition-colors"
-                >
-                  <i data-lucide="phone" class="h-4 w-4 text-amber-400 shrink-0"></i>
-                  <span>267-660-8456</span>
-                </a>
-                <div class="flex items-center gap-2.5 rounded-xl border border-slate-700/80 bg-slate-800/50 px-4 py-3 text-sm font-medium text-slate-200">
-                  <i data-lucide="map-pin" class="h-4 w-4 text-amber-400 shrink-0"></i>
-                  <span>Colmar, PA</span>
-                </div>
-              </div>
-
-              <!-- LinkedIn Full-Width Button -->
-              <a
-                href="https://www.linkedin.com/in/yagna-madasu-4b5a9b18/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="flex w-full items-center justify-center gap-2 rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-900 hover:bg-sky-50 transition-colors"
-              >
-                <i data-lucide="linkedin" class="h-4 w-4 text-sky-700"></i>
-                <span>Connect on LinkedIn</span>
-                <i data-lucide="arrow-up-right" class="h-4 w-4 text-slate-500"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-800 pt-6 text-xs text-slate-400 sm:flex-row">
-        <p>&copy; 2026 Yagna Madasu. All rights reserved.</p>
-        <p>Strategic Enterprise Technology Leader | Enterprise Applications, Data &amp; AI</p>
       </div>
     </div>
   </footer>
 
-  <!-- Interactive Behavior Script -->
+  <!-- Copy Notification Toast -->
+  <div id="copy-toast" role="status" aria-live="polite" class="fixed bottom-5 right-5 z-50 px-4 py-3 rounded-xl bg-brand-ink text-white text-sm font-semibold shadow-lg opacity-0 pointer-events-none transition-opacity duration-200">
+    Copied to clipboard
+  </div>
+
   <script>
-    // Initialize Lucide icons safely on load
-    document.addEventListener('DOMContentLoaded', () => {
-      if (window.lucide) {
-        lucide.createIcons();
-      }
-    });
-
-    // Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-
-    if (mobileMenuBtn && mobileMenu) {
-      mobileMenuBtn.addEventListener('click', () => {
-        mobileMenu.classList.toggle('hidden');
-      });
-
-      mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-          mobileMenu.classList.add('hidden');
-        });
-      });
-    }
-
-    // One-Click Copy Email with Non-Blocking Toast & execCommand Fallback
-    function copyEmail() {
-      const email = 'yagna.vasu@gmail.com';
-      const tempInput = document.createElement('textarea');
-      tempInput.value = email;
-      tempInput.setAttribute('readonly', '');
-      tempInput.style.position = 'absolute';
-      tempInput.style.left = '-9999px';
-      document.body.appendChild(tempInput);
-      tempInput.select();
-
-      try {
-        document.execCommand('copy');
-        showToast('Copied yagna.vasu@gmail.com to clipboard');
-      } catch (err) {
-        showToast('Email: yagna.vasu@gmail.com');
-      } finally {
-        document.body.removeChild(tempInput);
-      }
-    }
-
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      const toastMsg = document.getElementById('toast-message');
-      if (!toast || !toastMsg) return;
-
-      toastMsg.textContent = message;
-      toast.classList.remove('hidden');
-      requestAnimationFrame(() => {
-        toast.classList.remove('translate-y-4', 'opacity-0');
-      });
-
-      clearTimeout(window.__toastTimer);
-      window.__toastTimer = setTimeout(() => {
-        toast.classList.add('translate-y-4', 'opacity-0');
-        setTimeout(() => {
-          toast.classList.add('hidden');
-        }, 300);
-      }, 3000);
-    }
-
-    // Interactive Case Study Filter Pills
+    // Category Filter Logic for Key Results
     const filterButtons = document.querySelectorAll('.filter-btn');
     const caseCards = document.querySelectorAll('.case-card');
 
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const selectedFilter = btn.getAttribute('data-filter');
-
-        // Update active button styling
-        filterButtons.forEach(b => {
-          b.classList.remove('bg-slate-900', 'text-white', 'font-semibold');
-          b.classList.add('border', 'border-slate-200', 'bg-white', 'text-slate-700', 'font-medium');
+    filterButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        filterButtons.forEach((btn) => {
+          btn.classList.remove('active', 'bg-brand-navy', 'text-white', 'border-brand-navy');
+          btn.classList.add('bg-brand-warmBg', 'text-brand-muted', 'border-brand-line');
         });
-        btn.classList.remove('border', 'border-slate-200', 'bg-white', 'text-slate-700', 'font-medium');
-        btn.classList.add('bg-slate-900', 'text-white', 'font-semibold');
 
-        // Filter case study cards
-        caseCards.forEach(card => {
-          const categories = (card.getAttribute('data-category') || '').split(' ');
-          if (selectedFilter === 'all' || categories.includes(selectedFilter)) {
+        button.classList.add('active', 'bg-brand-navy', 'text-white', 'border-brand-navy');
+        button.classList.remove('bg-brand-warmBg', 'text-brand-muted', 'border-brand-line');
+
+        const selectedFilter = button.getAttribute('data-filter');
+
+        caseCards.forEach((card) => {
+          const cardCategory = card.getAttribute('data-category');
+          if (selectedFilter === 'all' || cardCategory === selectedFilter) {
             card.classList.remove('hidden');
           } else {
             card.classList.add('hidden');
@@ -1090,44 +731,70 @@
       });
     });
 
-    // Interactive Capabilities Matrix Tabs
-    const capTabButtons = document.querySelectorAll('.cap-tab-btn');
-    const capPanels = document.querySelectorAll('.cap-panel');
+    // Interactive Tab Switching for Core Capabilities
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('.tab-panel');
 
-    capTabButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        const selectedTab = btn.getAttribute('data-cap-tab');
-
-        // Update active tab styling
-        capTabButtons.forEach(b => {
-          b.classList.remove('bg-slate-900', 'text-white', 'font-semibold');
-          b.classList.add('border', 'border-slate-200', 'bg-slate-50', 'text-slate-700', 'font-medium');
+    tabButtons.forEach((button) => {
+      button.addEventListener('click', () => {
+        tabButtons.forEach((btn) => {
+          btn.classList.remove('active', 'bg-brand-ink', 'text-white', 'border-brand-ink');
+          btn.classList.add('bg-white', 'text-brand-muted', 'border-brand-line');
         });
-        btn.classList.remove('border', 'border-slate-200', 'bg-slate-50', 'text-slate-700', 'font-medium');
-        btn.classList.add('bg-slate-900', 'text-white', 'font-semibold');
 
-        // Show/hide panels and adjust grid columns cleanly
-        const panelContainer = capPanels[0]?.parentElement;
-        if (panelContainer) {
-          if (selectedTab === 'all') {
-            panelContainer.classList.remove('lg:grid-cols-1');
-            panelContainer.classList.add('lg:grid-cols-3');
-          } else {
-            panelContainer.classList.remove('lg:grid-cols-3');
-            panelContainer.classList.add('lg:grid-cols-1');
-          }
+        tabPanels.forEach((panel) => {
+          panel.classList.add('hidden');
+        });
+
+        button.classList.add('active', 'bg-brand-ink', 'text-white', 'border-brand-ink');
+        button.classList.remove('bg-white', 'text-brand-muted', 'border-brand-line');
+
+        const targetPanelId = button.getAttribute('data-tab');
+        const targetPanel = document.getElementById(targetPanelId);
+        if (targetPanel) {
+          targetPanel.classList.remove('hidden');
         }
-
-        capPanels.forEach(panel => {
-          const panelKey = panel.getAttribute('data-cap-panel');
-          if (selectedTab === 'all' || panelKey === selectedTab) {
-            panel.classList.remove('hidden');
-          } else {
-            panel.classList.add('hidden');
-          }
-        });
       });
     });
+
+    // Clipboard Copy Helper with Fallback
+    function copyToClipboard(text, label) {
+      const showToast = () => {
+        const toast = document.getElementById('copy-toast');
+        toast.textContent = label + ': ' + text;
+        toast.classList.remove('opacity-0');
+        toast.classList.add('opacity-100');
+        setTimeout(() => {
+          toast.classList.remove('opacity-100');
+          toast.classList.add('opacity-0');
+        }, 2500);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(showToast).catch(() => {
+          fallbackCopy(text);
+          showToast();
+        });
+      } else {
+        fallbackCopy(text);
+        showToast();
+      }
+    }
+
+    function fallbackCopy(text) {
+      const textarea = document.createElement('textarea');
+      textarea.value = text;
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      try {
+        document.execCommand('copy');
+      } catch (err) {
+        // Ignore copy error
+      }
+      document.body.removeChild(textarea);
+    }
   </script>
 </body>
 </html>
